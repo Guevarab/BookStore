@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Biblioteca</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/angular-bootstrap-lightbox.css">
+	<link rel="stylesheet" href="css/angular-bootstrap-lightbox.min.css">
+</head>
+<body style="background-color:#bdc3c7">
+<div class="container" ng-controller="LibroController as libroControl">
+	<h1 class="text-center">Libros</h1>
+		<a ui-sref="libros" class="btn btn-primary">Ver libros</a>
+		<div ui-view></div>
+</div>
+
+
+
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/app.js"></script>
+<script src="js/angular-ui-router.min.js"></script>	
+</body>
+</html>

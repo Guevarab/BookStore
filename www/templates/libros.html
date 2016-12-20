@@ -1,0 +1,26 @@
+	
+			<a ui-sref="dashboard" class="btn btn-muted">Ir al dashboard</a>
+	<div ng-repeat="book in libroControl.productos"><!-- Recorres el arreglo -->
+			<div class="row"></div><!-- Empiezas a dividir la pagina -->
+			<br>
+			<div class="col-md-12">
+				<img class="im-responsive" ng-src="{{book.imagenes[0].url}}"><!-- Pones la imagen -->
+			
+			</div>
+			<div class="col-md-8 .bg-primary"><!-- Empieza la seccion de abajo -->
+				<p class="pull-right">ID: {{book.id}}</p>
+				<h1 class="text-success"><em>{{book.titulo}}</em></h1>
+				<p class="">
+					{{book.descripcion}}		
+				</p>
+			</div>
+			<div class="col-md-4"><!-- Empieza la seccion de la derecha
+			 -->
+				<h4 class="text-muted">Editorial</h4>
+				<em class="text-danger">{{book.editorial}}</em>
+				<h4 class="text-muted">Autor</h4>
+				<em class="text-danger">{{book.autor}}</em>
+			</div>
+
+		</div>
+		
